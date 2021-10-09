@@ -4,14 +4,14 @@
 
 A container to host website on Tor hidden service with .onion address. Tor is free software and an open network that helps you defend against traffic analysis, enabling anonymous communication. ".onion" is a special-use top level domain name designating a "hidden service" on the Dark Web, reachable via the Tor network/accessed via the Tor browser.
 
-### Source Repository: [View on GitHub](https://github.com/3xploitGuy/torwebsite)
+### Container Image: [View on DockerHub](https://hub.docker.com/r/sandeshy/torwebsite)
 
 # How to use this image
 
 ★ **Run container:**
 
 ```sh
-docker container run -it --name <container_name> torwebsite:latest
+docker container run -it --name <container_name> sandeshy/torwebsite:latest
 ```
 
 ![container-start-image](https://user-images.githubusercontent.com/46316908/134805153-b13d1602-64f0-4d53-a187-de5c2bc22c2d.png)
@@ -35,7 +35,7 @@ torhost
 ```sh
 docker container run -it --name <container_name> \
        -v </some/path/on/hostOS>:/var/www/hidden_service \
-       torwebsite:latest
+       sandeshy/torwebsite:latest
 ```
 
 ### Configs:
